@@ -1,0 +1,4 @@
+# Porta do servidor
+PORT=5000
+
+MONGODB_URI=mongodb+srv://adminiagoriquelme418_db_user:<db_password>@cluster0.sbst6df.mongodb.net/?appName=Cluster0

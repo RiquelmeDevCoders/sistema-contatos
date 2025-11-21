@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Contatos</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📇 Sistema de Contatos</h1>
+            <p>Gerencie seus contatos de forma simples</p>
+        </header>
+
+        <div class="form-container">
+            <h2>Adicionar Novo Contato</h2>
+            <form id="contatoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" required placeholder="(00) 00000-0000">
+                </div>
+                <button type="submit" class="btn-primary">Adicionar Contato</button>
+            </form>
+        </div>
+
+        <div class="contatos-container">
+            <h2>Lista de Contatos</h2>
+            <div id="contatosList" class="contatos-list">
+                <p class="loading">Carregando contatos...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/frontend/script.js"></script>
+</body>
+
+</html>
